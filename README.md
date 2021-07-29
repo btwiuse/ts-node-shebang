@@ -14,7 +14,7 @@ Then install this project from npm
 $ npm install -g @btwiuse/ts-node-shebang
 ```
 
-And execute the typescript script
+And execute the example script
 
 ```
 $ ts-node-shebang

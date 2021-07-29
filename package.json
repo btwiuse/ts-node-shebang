@@ -1,6 +1,6 @@
 {
   "name": "@btwiuse/ts-node-shebang",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": "./index.ts",
   "scripts": {
     "publish": "npm publish --access public"
