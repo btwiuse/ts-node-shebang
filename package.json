@@ -1,3 +1,12 @@
 {
-  "name": "ts-node-shebang"
+  "name": "@btwiuse/ts-node-shebang",
+  "version": "0.0.0-0",
+  "bin": "./index.ts",
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
+  "files": [
+    "./index.ts",
+    "tsconfig.json"
+  ]
 }

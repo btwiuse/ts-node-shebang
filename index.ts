@@ -1,2 +1,7 @@
 #!/usr/bin/env ts-node
-console.log('greeting from ts-node');
+
+async function main(): Promise<void>{
+	console.log('Please go to https://github.com/btwiuse/ts-node-shebang for instructions');
+}
+
+void main();

@@ -4,8 +4,10 @@
 __metadata:
   version: 4
 
-"ts-node-shebang@workspace:.":
+"@btwiuse/ts-node-shebang@workspace:.":
   version: 0.0.0-use.local
-  resolution: "ts-node-shebang@workspace:."
+  resolution: "@btwiuse/ts-node-shebang@workspace:."
+  bin:
+    ts-node-shebang: ./index.ts
   languageName: unknown
   linkType: soft
