@@ -12,6 +12,7 @@ __metadata:
     "@types/node": ^16.4.6
     fs: ^0.0.1-security
     path: ^0.12.7
+    yaml: ^1.10.2
   bin:
     ts-node-shebang: ./index.ts
   languageName: unknown
@@ -61,5 +62,12 @@ __metadata:
   dependencies:
     inherits: 2.0.3
   checksum: 6682ea8239076243495c45e81f19c2c002e02805de4de08554dc815500805923f27f504ec1a9c7599d420b62bf7452efbab6fa078219d529188b0ca830f142a5
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^1.10.2":
+  version: 1.10.2
+  resolution: "yaml@npm:1.10.2"
+  checksum: 8d72062ea3dbfd8fae3d6ddd5b741c2aeb5835a31b0719bf14fac71dd84adde0829763d6fbac46387309da00af1440194c796da5efc349b0baf9de39d82ae69e
   languageName: node
   linkType: hard
