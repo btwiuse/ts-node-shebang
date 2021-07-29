@@ -19,3 +19,8 @@ And execute the example script
 ```
 $ ts-node-shebang
 ```
+
+To publish your own changes, you must change the package name, then run
+```
+$ yarn publish
+```
