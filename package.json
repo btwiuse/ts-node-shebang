@@ -1,5 +1,10 @@
 {
   "name": "@btwiuse/ts-node-shebang",
+  "description": "distribute executable TypeScript snippets on npmjs.org without compilation to JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btwiuse/ts-node-shebang"
+  },
   "version": "0.0.4",
   "bin": "./index.ts",
   "scripts": {
