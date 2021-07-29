@@ -1,6 +1,6 @@
 {
   "name": "@btwiuse/ts-node-shebang",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "bin": "./index.ts",
   "scripts": {
     "publish": "npm publish --access public"
@@ -8,5 +8,12 @@
   "files": [
     "./index.ts",
     "tsconfig.json"
-  ]
+  ],
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.6"
+  }
 }

@@ -13,8 +13,9 @@ const SUBCMD = [
 ];
 
 function showVersion(){
-	let packageJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json')));
-	console.log(packageJson.version);
+	let pkgjson = path.resolve(__dirname, 'package.json').toString();
+	let pkginfo = JSON.parse(fs.readFileSync(pkgjson, 'utf8'));
+	console.log(pkginfo.version);
 }
 
 function showHelp(){

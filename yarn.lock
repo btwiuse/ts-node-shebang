@@ -3,11 +3,63 @@
 
 __metadata:
   version: 4
+  cacheKey: 7
 
 "@btwiuse/ts-node-shebang@workspace:.":
   version: 0.0.0-use.local
   resolution: "@btwiuse/ts-node-shebang@workspace:."
+  dependencies:
+    "@types/node": ^16.4.6
+    fs: ^0.0.1-security
+    path: ^0.12.7
   bin:
     ts-node-shebang: ./index.ts
   languageName: unknown
   linkType: soft
+
+"@types/node@npm:^16.4.6":
+  version: 16.4.6
+  resolution: "@types/node@npm:16.4.6"
+  checksum: ade3247b3cf4413785d44b726fbfdec680af8bb2cb4a95edd3aafa7fd4af87e4a63c694b251ff6724a97a91a136a9da27f547a2b07e52e80f267f4bc4b05a98b
+  languageName: node
+  linkType: hard
+
+"fs@npm:^0.0.1-security":
+  version: 0.0.1-security
+  resolution: "fs@npm:0.0.1-security"
+  checksum: d23d3c0dd42fd11508e5f8d265375c676816adf398f61bfc3e2635e6e8ca323fd1f530d5dd5f87e4fca54296efb5ddf8a382b99f1ac243ac0a8b4b1cae8f5fac
+  languageName: node
+  linkType: hard
+
+"inherits@npm:2.0.3":
+  version: 2.0.3
+  resolution: "inherits@npm:2.0.3"
+  checksum: 9488f9433effbc24474f6baee8014e5337c7f99305ecb4204fa5864ae7655c24225780d87fc65ed8d3d374715a18c5dc8c69fe3bf9745cde2e7acd0ac068a07b
+  languageName: node
+  linkType: hard
+
+"path@npm:^0.12.7":
+  version: 0.12.7
+  resolution: "path@npm:0.12.7"
+  dependencies:
+    process: ^0.11.1
+    util: ^0.10.3
+  checksum: 0e2d3342ca6f91aba8e514919cae8a08ad12071297a3a99da6e3ea493f5296d9bb323ca9bece4d035fc280e91b701a740ce1e48ff65802004deaaae2f2cd623e
+  languageName: node
+  linkType: hard
+
+"process@npm:^0.11.1":
+  version: 0.11.10
+  resolution: "process@npm:0.11.10"
+  checksum: ed93a85e9185b40fb01788c588a87c1a9da0eb925ef7cebebbe1b8bbf0eba1802130366603a29e3b689c116969d4fe018de6aed3474bbeb5aefb3716b85d6449
+  languageName: node
+  linkType: hard
+
+"util@npm:^0.10.3":
+  version: 0.10.4
+  resolution: "util@npm:0.10.4"
+  dependencies:
+    inherits: 2.0.3
+  checksum: 6682ea8239076243495c45e81f19c2c002e02805de4de08554dc815500805923f27f504ec1a9c7599d420b62bf7452efbab6fa078219d529188b0ca830f142a5
+  languageName: node
+  linkType: hard
