@@ -3,6 +3,11 @@
 import fs from 'fs';
 import path from 'path';
 import { loadObject, loadText } from './utils';
+import fetch from 'node-fetch';
+
+if (!globalThis.fetch) {
+	globalThis.fetch = fetch;
+}
 
 export const CMDS = [
 	"argv",
@@ -13,9 +18,16 @@ export const CMDS = [
 	"version",
 ];
 
-export function showVersion(){
+export async function showVersion(){
 	let pkginfo = loadObject('package.json');
-	console.log(pkginfo.version);
+	console.log('current version:', pkginfo.version);
+	await showLatest();
+}
+
+export async function showLatest(){
+	const resp = await fetch('https://registry.npmjs.org/-/package/@btwiuse/ts-node-shebang/dist-tags');
+	const body = await resp.json();
+	console.log('latest version:', body.latest);
 }
 
 export function showHelp(){

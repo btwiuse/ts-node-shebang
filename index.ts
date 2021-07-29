@@ -9,10 +9,10 @@ async function main(): Promise<void>{
 		demoArgv();
 		break;
 	case 'dump':
-		await demoDump();
+		demoDump();
 		break;
 	case 'echo':
-		await demoEcho(process.argv.slice(3));
+		demoEcho(process.argv.slice(3));
 		break;
 	case 'sleep':
 		await demoSleep(process.argv[3]);
@@ -20,7 +20,7 @@ async function main(): Promise<void>{
 	case 'version':
 	case '-v':
 	case '--version':
-		showVersion();
+		await showVersion();
 		break;
 	case 'help':
 	case '-h':
