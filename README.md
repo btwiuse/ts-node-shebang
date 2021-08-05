@@ -27,5 +27,5 @@ $ npm install -g ts-node @btwiuse/ts-node-shebang
 and run it:
 
 ```
-$ ts-node-shebang
+$ btwiuse-ts-node-shebang
 ```

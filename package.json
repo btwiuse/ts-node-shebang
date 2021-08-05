@@ -6,13 +6,15 @@
     "url": "https://github.com/btwiuse/ts-node-shebang.git"
   },
   "version": "0.1.0",
-  "bin": "./index.ts",
+  "bin": {
+    "btwiuse-ts-node-shebang": "./index.ts"
+  },
   "scripts": {
     "format": "npx pretty-quick",
     "publish": "yarn npm publish --access public"
   },
   "files": [
-    "**/*.ts",
+    "*.ts",
     "tsconfig.json"
   ],
   "license": "Unlicense",
@@ -33,5 +35,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "author": {
+    "name": "btwiuse"
   }
 }

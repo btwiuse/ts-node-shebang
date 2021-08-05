@@ -19,7 +19,7 @@ __metadata:
     pretty-quick: ^3.1.1
     yaml: ^1.10.2
   bin:
-    ts-node-shebang: ./index.ts
+    btwiuse-ts-node-shebang: ./index.ts
   languageName: unknown
   linkType: soft
 
