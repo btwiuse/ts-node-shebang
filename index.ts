@@ -11,9 +11,6 @@ import {
 } from "./cmds";
 
 async function main(): Promise<void> {
-  const opt = fromArgs(Opt);
-  console.log(opt);
-
   switch (process.argv[2]) {
     case "argv":
       demoArgv();

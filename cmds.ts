@@ -2,8 +2,9 @@
 
 import fs from 'fs';
 import path from 'path';
-import { loadObject, loadText } from './utils';
+import { loadText } from './utils';
 import fetch from 'node-fetch';
+import Package from './package.json';
 
 if (!globalThis.fetch) {
 	globalThis.fetch = fetch;
@@ -19,8 +20,7 @@ export const CMDS = [
 ];
 
 export async function showVersion(){
-	let pkginfo = loadObject('package.json');
-	console.log('current version:', pkginfo.version);
+	console.log('current version:', Package.version);
 	await showLatest();
 }
 
