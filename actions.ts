@@ -10,7 +10,7 @@ if (!globalThis.fetch) {
 	globalThis.fetch = fetch;
 }
 
-export const CMDS = [
+export const ACTIONS = [
 	"argv",
 	"dump",
 	"echo",
@@ -32,7 +32,7 @@ export async function showLatest(){
 
 export function showHelp(){
 	console.log('list of demo sub commands:');
-	for (let [i, arg] of CMDS.entries()) {
+	for (let [i, arg] of ACTIONS.entries()) {
 		console.log('-', arg);
 	}
 	console.log('Please go to https://github.com/btwiuse/ts-node-shebang for instructions');

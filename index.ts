@@ -1,6 +1,6 @@
 #!/usr/bin/env ts-node
 
-import { loadObject, loadText } from "./utils";
+import program, { Command } from "commander";
 import {
   showVersion,
   showHelp,
@@ -8,7 +8,7 @@ import {
   demoDump,
   demoEcho,
   demoSleep,
-} from "./cmds";
+} from "./actions";
 
 async function main(): Promise<void> {
   switch (process.argv[2]) {

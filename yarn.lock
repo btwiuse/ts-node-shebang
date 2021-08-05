@@ -10,6 +10,7 @@ __metadata:
   resolution: "@btwiuse/ts-node-shebang@workspace:."
   dependencies:
     "@types/node": ^16.4.6
+    commander: ^8.1.0
     fs: ^0.0.1-security
     husky: ^7.0.1
     node-fetch: ^2.6.1
@@ -106,6 +107,13 @@ __metadata:
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
+  languageName: node
+  linkType: hard
+
+"commander@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "commander@npm:8.1.0"
+  checksum: 75abce64ed13cc7703606dbe9e6cfcabe04f382c6c3404c3054ac4f3917064c40ddbf3eecd8917594426d547a85b4cacbc15e986d55a7723a11494ec19b570da
   languageName: node
   linkType: hard
 
