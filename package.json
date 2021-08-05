@@ -8,6 +8,7 @@
   "version": "0.1.0",
   "bin": "./index.ts",
   "scripts": {
+    "format": "npx pretty-quick",
     "publish": "yarn npm publish --access public"
   },
   "files": [
