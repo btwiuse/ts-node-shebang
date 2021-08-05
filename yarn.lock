@@ -11,6 +11,7 @@ __metadata:
   dependencies:
     "@types/node": ^16.4.6
     commander: ^8.1.0
+    figlet-promised: ^1.0.0
     fs: ^0.0.1-security
     husky: ^7.0.1
     node-fetch: ^2.6.1
@@ -158,6 +159,22 @@ __metadata:
     signal-exit: ^3.0.2
     strip-final-newline: ^2.0.0
   checksum: e30d298934d9c52f90f3847704fd8224e849a081ab2b517bbc02f5f7732c24e56a21f14cb96a08256deffeb2d12b2b7cb7e2b014a12fb36f8d3357e06417ed55
+  languageName: node
+  linkType: hard
+
+"figlet-promised@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "figlet-promised@npm:1.0.0"
+  dependencies:
+    figlet: ^1.2.4
+  checksum: a57456c2bc8a1dab5072e16fe4e83ead53ff5b1e33e818e2c51bf6fe1ba264df8d3ca22f4c71153c4644ebdbcb7e34b554eaa0e2429b24463697f3a00ccc9f1f
+  languageName: node
+  linkType: hard
+
+"figlet@npm:^1.2.4":
+  version: 1.5.0
+  resolution: "figlet@npm:1.5.0"
+  checksum: 89641163b38f6f76e798d878cc6ba04cf978f6962c54f52521bc6630fd6cfb4d2cbc2cb97465a8049bf0e84a22a47159da3264590dfd307d45e39f23bc4087df
   languageName: node
   linkType: hard
 

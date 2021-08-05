@@ -14,6 +14,7 @@ import {
   demoEcho,
   demoSleep,
 } from "./actions";
+import figlet from "figlet-promised";
 
 async function main(): Promise<void> {
   program.name(Package.name);
@@ -28,6 +29,7 @@ Please go to https://github.com/btwiuse/ts-node-shebang for instructions`);
     .action(() => {
       showLatest();
     });
+  program.addHelpText("before", await figlet("ts-node-shebang"));
   program
     .command("args")
     .description("show program.args")
