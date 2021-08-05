@@ -10,11 +10,6 @@ if (!globalThis.fetch) {
   globalThis.fetch = fetch;
 }
 
-export async function showVersion() {
-  console.log("current version:", Package.version);
-  await showLatest();
-}
-
 export async function showLatest() {
   const resp = await fetch(
     "https://registry.npmjs.org/-/package/@btwiuse/ts-node-shebang/dist-tags"

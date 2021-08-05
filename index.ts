@@ -1,8 +1,9 @@
 #!/usr/bin/env ts-node
 
 import program, { Command } from "commander";
+import Package from "./package.json";
 import {
-  showVersion,
+  showLatest,
   showHelp,
   demoWhich,
   demoWhere,
@@ -15,11 +16,17 @@ import {
 } from "./actions";
 
 async function main(): Promise<void> {
+  program.name(Package.name);
+  program.version(Package.version);
+  program.description(`This is a template project that demonstrates how to distribute
+executable TypeScript snippets on npmjs.org without compilation to JavaScript.
+
+Please go to https://github.com/btwiuse/ts-node-shebang for instructions`);
   program
-    .command("version")
-    .description("show version")
+    .command("latest")
+    .description("show latest version")
     .action(() => {
-      showVersion();
+      showLatest();
     });
   program
     .command("args")
